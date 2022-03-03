@@ -4,8 +4,7 @@
 * Location: Ufa, Russia
 * Phone: +7 917 741 23 22
 * Email: r8sattarov@mail.ru
-* GitHub: [RuslSatt][git]
-[git][https://github.com/RuslSatt]
+* GitHub: [RuslSatt]('https://github.com/RuslSatt')
 # About me
 
 # Skills
@@ -40,9 +39,7 @@ var countBits = function(n) {
 # Experience
 #### Educational projects
 
-* [portfolio][port]
-[port][https://github.com/RuslSatt/rs-school-stage-0/tree/portfolio]
-* [movie-app][movie]
-[movie][https://github.com/RuslSatt/rs-school-stage-0/tree/movie-app]
-* [tic-tac-toe][tic]
-[tic][https://github.com/RuslSatt/rs-school-stage-0/tree/tic-tac-toe]
+* [portfolio]('https://github.com/RuslSatt/rs-school-stage-0/tree/portfolio')
+* [movie-app]('https://github.com/RuslSatt/rs-school-stage-0/tree/movie-app')
+* [tic-tac-toe]('https://github.com/RuslSatt/rs-school-stage-0/tree/tic-tac-toe')
+
