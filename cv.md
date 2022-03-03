@@ -7,6 +7,8 @@
 * **GitHub**: [RuslSatt](https://github.com/RuslSatt)
 # About me
 
+**My name is Ruslan. I'm future Software Engineer** I want to learn programming languages which will help me in work on my projects and also on projects which will be on my future job. I really very purposeful and for me very this important becouse this help me not give up and go to in rigth. I go to learn new every time when sit down for my desk and this  charge me. I very easy discuss different things with people. I like communicate with people. I'm open for communicate and I always ready to help other. I'm very happy be here.
+
 # Skills
 
 * **HTML**
