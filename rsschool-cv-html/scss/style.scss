@@ -1,3 +1,13 @@
 @import '_zero.scss';
 @import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700);
 
+.wrapper {
+   display: flex;
+   overflow: hidden;
+   min-height: 100vh;
+   flex-direction: column;
+}
+
+.main {
+   flex: 1 1 auto;
+}
