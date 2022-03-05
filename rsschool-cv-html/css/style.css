@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand:regular);
 * {
   padding: 0;
   margin: 0;
@@ -87,8 +87,37 @@ h6 {
 }
 
 body {
-  font-family: 'Montseratt', sans-serif;
+  scroll-behavior: smooth;
+  font-family: "Patrick Hand", sans-serif;
   color: #000;
+  background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
+  background-size: 400% 400%;
+  -webkit-animation: gradient-body 15s ease infinite;
+          animation: gradient-body 15s ease infinite;
+}
+
+@-webkit-keyframes gradient-body {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient-body {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .wrapper {
@@ -115,10 +144,6 @@ body {
   max-width: 1440px;
   margin: 0px auto;
   padding: 0 20px;
-}
-
-.header {
-  background-color: #C1FFBC;
 }
 
 .header__body {
@@ -221,6 +246,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 25px;
 }
 
 .menu-header__list li {
@@ -259,7 +285,6 @@ body {
 
 .hero {
   padding: 50px 0 50px 0;
-  background-color: #dacdfd;
 }
 
 .hero__body {
@@ -300,8 +325,8 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-box-shadow: 5px 5px 5px #686767;
-          box-shadow: 5px 5px 5px #686767;
+  -webkit-box-shadow: 15px 15px 5px 10px #5f3ab4;
+          box-shadow: 15px 15px 5px 10px #5f3ab4;
   border: 2px solid #dacdfd;
 }
 
@@ -329,4 +354,77 @@ body {
 
 .hero__subtitle {
   font-size: 26px;
+}
+
+.about__title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#833ab4), color-stop(50%, #fd1d1d), to(#fcb045));
+  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  padding: 5px 0;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.about__text {
+  font-size: 20px;
+  line-height: 1.5;
+  background-color: #dacdfd;
+  border-radius: 10px;
+  padding: 10px;
+  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+  background-size: 400% 400%;
+  -webkit-animation: gradient-text 15s ease infinite;
+          animation: gradient-text 15s ease infinite;
+}
+
+@-webkit-keyframes gradient-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
