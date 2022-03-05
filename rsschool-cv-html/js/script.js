@@ -6,3 +6,4 @@ menuIcon.addEventListener ('click', function (e) {
    menuActive.classList.toggle ('active');
    menuIcon.classList.toggle ('icon-active');
 })
+

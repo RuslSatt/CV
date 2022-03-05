@@ -350,3 +350,31 @@ body {
       }
    }
 }
+
+// ----------------- code --------------- //
+
+.code {
+   padding: 50px 0;
+   &__body {
+      overflow: hidden;
+      background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+   }
+
+   &__example {
+      overflow: auto;
+      font-size: 20px;
+      text-align: left;
+      padding: 20px;
+      margin-left: -220px;
+      span:first-child {
+         margin-left: 230px;
+      }
+      @media (max-width: 800px) {
+         text-align: left;
+      }
+   }
+}
+

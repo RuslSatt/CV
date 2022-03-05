@@ -550,3 +550,37 @@ body {
     background-position: 0;
   }
 }
+
+.code {
+  padding: 50px 0;
+}
+
+.code__body {
+  overflow: hidden;
+  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.code__example {
+  overflow: auto;
+  font-size: 20px;
+  text-align: left;
+  padding: 20px;
+  margin-left: -220px;
+}
+
+.code__example span:first-child {
+  margin-left: 230px;
+}
+
+@media (max-width: 800px) {
+  .code__example {
+    text-align: left;
+  }
+}
