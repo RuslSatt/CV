@@ -7,3 +7,33 @@ menuIcon.addEventListener ('click', function (e) {
    menuIcon.classList.toggle ('icon-active');
 })
 
+const projects = document.querySelector('.projects__row');
+
+function showDescription (e) {
+   if (e.target.closest('.projects__link-description')) {
+      let dataValue = e.target.dataset.back;
+      const subtitle = document.querySelectorAll('.projects__subtitle');
+      subtitle.forEach (sub => {
+         const dataBack = sub.dataset.back;
+         if (dataValue == dataBack) {
+            sub.classList.toggle('active-projects');
+         } else {
+            sub.classList.remove('active-projects');
+         }
+      })
+      
+   }
+}
+
+projects.addEventListener ('click', showDescription);
+
+
+window.addEventListener('click', function (e) {
+   const targetClick = e.target;
+   if (!targetClick.closest ('.projects__link-description')) {
+      const backProjects = document.querySelectorAll('.projects__subtitle');
+      backProjects.forEach (back => {
+         back.classList.remove ('active-projects');
+      })
+   }
+})

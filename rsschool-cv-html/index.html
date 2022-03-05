@@ -23,12 +23,12 @@
                   <nav class="menu-header__menu">
                      <ul class="menu-header__list">
                         <li><a href="#about" class="menu-header__link">About me</a></li>
-                        <li><a href="" class="menu-header__link">Contacts</a></li>
-                        <li><a href="" class="menu-header__link">Skills</a></li>
-                        <li><a href="" class="menu-header__link">Code example</a></li>
-                        <li><a href="" class="menu-header__link">Experience</a></li>
+                        <li><a href="#skills" class="menu-header__link">Skills</a></li>
+                        <li><a href="#code" class="menu-header__link">Code example</a></li>
+                        <li><a href="#projects" class="menu-header__link">Projects</a></li>
                         <li><a href="" class="menu-header__link">Education</a></li>
                         <li><a href="" class="menu-header__link">English</a></li>
+                        <li><a href="" class="menu-header__link">Contacts</a></li>
                      </ul>
                   </nav>
                </div>
@@ -53,9 +53,9 @@
                </div>
             </div>
          </section>
-         <section class="about">
+         <section id="about" class="about">
             <div class="container">
-               <h2 id="about" class="about__title title">
+               <h2 class="about__title title">
                   About me
                </h2>
                <p class="about__text">
@@ -68,7 +68,7 @@
                </p>
             </div>
          </section>
-         <section class="skills">
+         <section id="skills" class="skills">
             <div class="container">
                <h2 class="skills__title title">
                   Skills
@@ -157,25 +157,318 @@
                </div>
             </div>
          </section>
-         <section class="code">
+         <section id="code" class="code">
             <div class="container">
                <h2 class="code__title title">
                   Code example
                </h2>
                <div class="code__body">
-                  <pre class="code__example" style="font-family:monospace;"><span>let countBits</span> <span style="color: #339933;">=</span> <span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span>n<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
-                        let num <span style="color: #339933;">=</span> <span style="color: #009900;">&#91;</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">;</span>
-                        <span style="color: #000066; font-weight: bold;">for</span> <span style="color: #009900;">&#40;</span>let i <span style="color: #339933;">=</span> <span style="color: #CC0000;">0</span><span style="color: #339933;">;</span> <span style="color: #339933;">;</span> i<span style="color: #339933;">++</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
-                           num.<span style="color: #660066;">push</span><span style="color: #009900;">&#40;</span>n <span style="color: #339933;">%</span> <span style="color: #CC0000;">2</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
-                           n <span style="color: #339933;">=</span> parseInt<span style="color: #009900;">&#40;</span>n <span style="color: #339933;">/</span> <span style="color: #CC0000;">2</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
-                           <span style="color: #000066; font-weight: bold;">if</span> <span style="color: #009900;">&#40;</span>n <span style="color: #339933;">/</span> <span style="color: #CC0000;">2</span> <span style="color: #339933;">==</span> <span style="color: #CC0000;">0</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
-                              <span style="color: #000066; font-weight: bold;">break</span><span style="color: #339933;">;</span>
-                           <span style="color: #009900;">&#125;</span>
-                        <span style="color: #009900;">&#125;</span>
-                        <span style="color: #000066; font-weight: bold;">const</span> numFilter <span style="color: #339933;">=</span> num.<span style="color: #660066;">filter</span><span style="color: #009900;">&#40;</span>item <span style="color: #339933;">=&gt;</span> item <span style="color: #339933;">===</span> <span style="color: #CC0000;">1</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
-                        <span style="color: #000066; font-weight: bold;">return</span> numFilter.<span style="color: #660066;">length</span><span style="color: #339933;">;</span>
-                     <span style="color: #009900;">&#125;</span>
+                  <pre class="code__example" style="font-family:monospace;"><span><span style="color: #a41ffd;">let</span> countBits</span> <span style="color: #1b9988;">=</span> <span style="color: #a41ffd; font-weight: bold;">function</span><span style="color: black;">&#40;</span>n<span style="color: black;">&#41;</span> <span style="color: black;">&#123;</span>
+                     <span style="color: #a41ffd;">let</span> num <span style="color: #1b9988;">=</span> <span style="color: black;">&#91;</span><span style="color: black;">&#93;</span><span style="color: black;">;</span>
+                        <span style="color: #a41ffd; font-weight: bold;">for</span> <span style="color: black;">&#40;</span><span style="color: #a41ffd;">let</span> i <span style="color: #1b9988;">=</span> <span style="color: #CC0000;">0</span><span style="color: black;">;</span> <span style="color: black;">;</span> i<span style="color: black;">++</span><span style="color: black;">&#41;</span> <span style="color: black;">&#123;</span>
+                           num.<span style="color: #0400fd;">push</span><span style="color: black;">&#40;</span>n <span style="color: black;">%</span> <span style="color: #CC0000;">2</span><span style="color: black;">&#41;</span><span style="color: black;">;</span>
+                           n <span style="color: #1b9988;">= </span><span style="color: #1b9988;">parseInt</span><span style="color: black;">&#40;</span>n <span style="color: black;">/</span> <span style="color: #CC0000;">2</span><span style="color: black;">&#41;</span><span style="color: black;">;</span>
+                           <span style="color: #a41ffd; font-weight: bold;">if</span> <span style="color: black;">&#40;</span>n <span style="color: black;">/</span> <span style="color: #CC0000;">2</span> <span style="color: #1b9988;">==</span> <span style="color: #CC0000;">0</span><span style="color: black;">&#41;</span> <span style="color: black;">&#123;</span>
+                              <span style="color: #a41ffd; font-weight: bold;">break</span><span style="color: black;">;</span>
+                           <span style="color: black;">&#125;</span>
+                        <span style="color: black1;">&#125;</span>
+                        <span style="color: #a41ffd; font-weight: bold;">const</span> numFilter <span style="color: #1b9988;">=</span> num.<span style="color: #0400fd;">filter</span><span style="color: black1;">&#40;</span>item <span style="color: #1b9988;">=&gt;</span> item <span style="color: #1b9988;">===</span> <span style="color: #CC0000;">1</span><span style="color: black;">&#41;</span><span style="color: black;">;</span>
+                        <span style="color: #a41ffd; font-weight: bold;">return</span> numFilter.<span style="color: #cc1616;">length</span><span style="color: black;">;</span>
+                     <span style="color: black;">&#125;</span>
                   </pre>
+               </div>
+            </div>
+         </section>
+         <section id="projects" class="projects">
+            <div class="container">
+               <h2 class="projects__title title">
+                  Projects
+               </h2>
+               <div class="projects__row">
+                  <div class="projects__column">
+                     <div class="projects__item">
+                        <div class="projects__img">
+                           <a href="https://ruslsatt.github.io/rs-school-stage-0/portfolio/"
+                              class="prokects__links-project">
+                              <img class="project__images" src="./assets/img/portfolio.jpg" alt="">
+                              <p data-back="1" class="projects__subtitle">
+                                 In this work implemented adaptive layout, theme change, data saving to locale storage, a custom video player, image change it the portfolio section and page translation.
+                              </p>
+                           </a>
+                        </div>
+                        <div class="projects__description">
+                           <a href="https://ruslsatt.github.io/rs-school-stage-0/portfolio/"
+                              class="projects__title-item">
+                              Portfolio
+                           </a>
+                           <div class="projects__skills">
+                              <div class="projects__use-skills">
+                                 Technologies used
+                              </div>
+                              <span>
+                                 <img src="./assets/img/html.png" alt="html">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/css3.png" alt="css">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/sass.png" alt="sass">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/javascript.png" alt="javascript">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/figma.png" alt="figma">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/git.png" alt="git">
+                              </span>
+                           </div>
+                           <div class="projects__buttons">
+                              <a href="https://github.com/RuslSatt/rs-school-stage-0/tree/portfolio"
+                                 class="projects__link-src">Source</a>
+                                 <button data-back="1" class="projects__link-description">Description</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="projects__column">
+                     <div class="projects__item">
+                        <div class="projects__img">
+                           <a href="https://ruslsatt.github.io/rs-school-stage-0/movie-app/"
+                              class="prokects__links-project">
+                              <img class="project__images" src="./assets/img/movie-app.jpg" alt="">
+                              <p data-back="2" class="projects__subtitle">
+                                 Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
+                                 ipsum dolor sit amet
+                                 ipsum dolor sit amet
+                              </p>
+                           </a>
+                        </div>
+                        <div class="projects__description">
+                           <a href="https://ruslsatt.github.io/rs-school-stage-0/movie-app/"
+                              class="projects__title-item">
+                              Movie-app
+                           </a>
+                           <div class="projects__skills">
+                              <div class="projects__use-skills">
+                                 Technologies used
+                              </div>
+                              <span>
+                                 <img src="./assets/img/html.png" alt="html">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/css3.png" alt="css">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/sass.png" alt="sass">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/javascript.png" alt="javascript">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/git.png" alt="git">
+                              </span </div>
+                           </div>
+                           <div class="projects__buttons">
+                              <a href="https://github.com/RuslSatt/rs-school-stage-0/tree/movie-app"
+                                 class="projects__link-src">Source</a>
+                                 <button data-back="2" class="projects__link-description">Description</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="projects__column">
+                     <div class="projects__item">
+                        <div class="projects__img">
+                           <a href="https://ruslsatt.github.io/rs-school-stage-0/tic-tac-toe/"
+                              class="prokects__links-project">
+                              <img class="project__images" src="./assets/img/tic-tac-toe.jpg" alt="">
+                              <p data-back="3" class="projects__subtitle">
+                                 Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
+                                 ipsum dolor sit amet
+                              </p>
+                           </a>
+                        </div>
+                        <div class="projects__description">
+                           <a href="https://ruslsatt.github.io/rs-school-stage-0/tic-tac-toe/"
+                              class="projects__title-item">
+                              Tic-tac-toe
+                           </a>
+
+                           <div class="projects__skills">
+                              <div class="projects__use-skills">
+                                 Technologies used
+                              </div>
+                              <span>
+                                 <img src="./assets/img/html.png" alt="html">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/css3.png" alt="css">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/sass.png" alt="sass">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/javascript.png" alt="javascript">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/git.png" alt="git">
+                              </span </div>
+                           </div>
+                           <div class="projects__buttons">
+                              <a href="https://github.com/RuslSatt/rs-school-stage-0/tree/tic-tac-toe"
+                                 class="projects__link-src">Source</a>
+                                 <button data-back="3" class="projects__link-description">Description</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="projects__column">
+                     <div class="projects__item">
+                        <div class="projects__img">
+                           <a href="https://ruslsatt.github.io/layout/token/"
+                              class="prokects__links-project">
+                              <img class="project__images" src="./assets/img/token.jpg" alt="">
+                              <p data-back="4" class="projects__subtitle">
+                                 Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
+                                 ipsum dolor sit amet
+                              </p>
+                           </a>
+                        </div>
+                        <div class="projects__description">
+                           <a href="https://ruslsatt.github.io/layout/token/"
+                              class="projects__title-item">
+                              Token
+                           </a>
+                           <div class="projects__skills">
+                              <div class="projects__use-skills">
+                                 Technologies used
+                              </div>
+                              <span>
+                                 <img src="./assets/img/html.png" alt="html">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/css3.png" alt="css">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/sass.png" alt="sass">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/javascript.png" alt="javascript">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/figma.png" alt="figma">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/git.png" alt="git">
+                              </span>
+                           </div>
+                           <div class="projects__buttons">
+                              <a href="https://github.com/RuslSatt/layout/tree/token"
+                                 class="projects__link-src">Source</a>
+                                 <button data-back="4" class="projects__link-description">Description</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="projects__column">
+                     <div class="projects__item">
+                        <div class="projects__img">
+                           <a href="https://ruslsatt.github.io/layout/grovmade/"
+                              class="prokects__links-project">
+                              <img class="project__images" src="./assets/img/grovmade.jpg" alt="">
+                              <p data-back="5" class="projects__subtitle">
+                                 Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
+                                 ipsum dolor sit amet
+                              </p>
+                           </a>
+                        </div>
+                        <div class="projects__description">
+                           <a href="https://ruslsatt.github.io/layout/grovmade/"
+                              class="projects__title-item">
+                              Grovmade
+                           </a>
+                           <div class="projects__skills">
+                              <div class="projects__use-skills">
+                                 Technologies used
+                              </div>
+                              <span>
+                                 <img src="./assets/img/html.png" alt="html">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/css3.png" alt="css">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/sass.png" alt="sass">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/javascript.png" alt="javascript">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/figma.png" alt="figma">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/git.png" alt="git">
+                              </span>
+                           </div>
+                           <div class="projects__buttons">
+                              <a href="https://github.com/RuslSatt/layout/tree/grovmade"
+                                 class="projects__link-src">Source</a>
+                                 <button data-back="5" class="projects__link-description">Description</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="projects__column">
+                     <div class="projects__item">
+                        <div class="projects__img">
+                           <a href="https://ruslsatt.github.io/layout/product/"
+                              class="prokects__links-project">
+                              <img class="project__images" src="./assets/img/product.jpg" alt="">
+                              <p data-back="6" class="projects__subtitle">
+                                 Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
+                                 ipsum dolor sit amet
+                              </p>
+                           </a>
+                        </div>
+                        <div class="projects__description">
+                           <a href="https://ruslsatt.github.io/layout/product/"
+                              class="projects__title-item">
+                              Product
+                           </a>
+
+                           <div class="projects__skills">
+                              <div class="projects__use-skills">
+                                 Technologies used
+                              </div>
+                              <span>
+                                 <img src="./assets/img/html.png" alt="html">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/css3.png" alt="css">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/sass.png" alt="sass">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/javascript.png" alt="javascript">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/figma.png" alt="figma">
+                              </span>
+                              <span>
+                                 <img src="./assets/img/git.png" alt="git">
+                              </span>
+                           </div>
+                           <div class="projects__buttons">
+                              <a href="https://github.com/RuslSatt/layout/tree/product"
+                                 class="projects__link-src">Source</a>
+                                 <button data-back="6" class="projects__link-description">Description</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </section>
