@@ -113,8 +113,8 @@ body {
 
 .container {
   max-width: 1440px;
-  padding: 0 20px;
   margin: 0px auto;
+  padding: 0 20px;
 }
 
 .header {
@@ -199,6 +199,7 @@ body {
 @media (max-width: 768px) {
   .menu-header__menu {
     position: fixed;
+    z-index: 8;
     top: 0;
     right: -100%;
     width: 100%;
@@ -254,4 +255,78 @@ body {
 
 .menu-header__link:hover {
   color: #585858;
+}
+
+.hero {
+  padding: 50px 0 50px 0;
+  background-color: #dacdfd;
+}
+
+.hero__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__photo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 300px;
+          flex: 0 1 300px;
+  height: 300px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .hero__photo {
+    margin-bottom: 20px;
+  }
+}
+
+.hero__photo img {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 5px 5px 5px #686767;
+          box-shadow: 5px 5px 5px #686767;
+  border: 2px solid #dacdfd;
+}
+
+.hero__text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  margin-left: 50px;
+}
+
+@media (max-width: 767px) {
+  .hero__text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+.hero__title {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero__subtitle {
+  font-size: 26px;
 }
