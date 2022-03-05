@@ -86,14 +86,17 @@ h6 {
   font-weight: 400;
 }
 
-body {
+html {
   scroll-behavior: smooth;
+}
+
+body {
   font-family: "Patrick Hand", sans-serif;
   color: #000;
   background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
   background-size: 400% 400%;
-  -webkit-animation: gradient-body 15s ease infinite;
-          animation: gradient-body 15s ease infinite;
+  -webkit-animation: gradient-body 30s ease infinite;
+          animation: gradient-body 30s ease infinite;
 }
 
 @-webkit-keyframes gradient-body {
@@ -144,6 +147,43 @@ body {
   max-width: 1440px;
   margin: 0px auto;
   padding: 0 20px;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#833ab4), color-stop(50%, #fd1d1d), to(#fcb045));
+  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  padding: 5px 0;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .header__body {
@@ -280,7 +320,7 @@ body {
 }
 
 .menu-header__link:hover {
-  color: #585858;
+  color: #fff;
 }
 
 .hero {
@@ -356,6 +396,10 @@ body {
   font-size: 26px;
 }
 
+.about {
+  padding: 50px 0 50px 0;
+}
+
 .about__title {
   font-size: 36px;
   margin-bottom: 20px;
@@ -367,18 +411,6 @@ body {
           animation: gradient 15s ease infinite;
   padding: 5px 0;
   border-radius: 10px;
-}
-
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 @keyframes gradient {
@@ -426,5 +458,95 @@ body {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+.skills {
+  padding: 0 0 50px 0;
+}
+
+.skills__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
+  padding: 20px 0 0 0;
+}
+
+.skills__progress-bar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 650px) {
+  .skills__progress-bar {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}
+
+.skills__name {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 10%;
+          flex: 0 1 10%;
+  font-size: 26px;
+  margin-right: 20px;
+}
+
+.skills__progress {
+  width: 100%;
+  max-width: 400px;
+  height: 20px;
+  background: #e1e4e8;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skills__bar {
+  text-align: center;
+  font-size: 20px;
+  padding: 0px 15px 2px 10px;
+  display: block;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#ffd33d), color-stop(17%, #ea4aaa), color-stop(34%, #b34bff), color-stop(51%, #01feff), color-stop(68%, #ffd33d), color-stop(85%, #ea4aaa), to(#b34bff));
+  background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
+  background-size: 300% 100%;
+  -webkit-animation: progress-animation 2s linear infinite;
+          animation: progress-animation 2s linear infinite;
+}
+
+@-webkit-keyframes progress-animation {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+@keyframes progress-animation {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
   }
 }
