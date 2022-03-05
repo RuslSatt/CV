@@ -99,30 +99,6 @@ body {
           animation: gradient-body 15s ease infinite;
 }
 
-@-webkit-keyframes gradient-body {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes gradient-body {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,7 +186,7 @@ body {
 }
 
 .header__body {
-  min-height: 50px;
+  min-height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,7 +323,7 @@ body {
 }
 
 .hero {
-  padding: 50px 0 50px 0;
+  padding: 50px 0 0px 0;
 }
 
 .hero__body {
@@ -550,7 +526,7 @@ body {
 }
 
 .code {
-  padding: 50px 0;
+  padding: 50px 0 0 0;
 }
 
 .code__body {
@@ -599,7 +575,7 @@ body {
 }
 
 .projects {
-  padding: 0 0 100px 0;
+  padding: 50px 0 0px 0;
 }
 
 .projects__row {
@@ -862,4 +838,160 @@ body {
       -ms-flex: 0 1 30%;
           flex: 0 1 30%;
   padding: 0 10px;
+}
+
+.education-english {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.education {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 50px 0 50px 0;
+}
+
+@media (max-width: 768px) {
+  .education {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 50px 0 0px 0;
+  }
+}
+
+.education__name {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  color: #dacdfd;
+}
+
+.education__desc {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.education__desc p {
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.education__desc *:last-child {
+  margin-bottom: 0px;
+}
+
+.education__desc span {
+  color: chartreuse;
+}
+
+.english {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 50px 0 50px 0;
+}
+
+@media (max-width: 768px) {
+  .english {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 50px 0 0px 0;
+  }
+}
+
+.english__subtitle {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  padding: 10px;
+  border: 5px solid #dacdfd;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0px auto;
+  background: radial-gradient(circle, #22c1c3 0%, #fdbb2d 100%);
+  background-size: 300% 100%;
+  -webkit-animation: progress-animation 5s linear infinite;
+          animation: progress-animation 5s linear infinite;
+}
+
+@keyframes progress-animation {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+.english__text {
+  text-align: center;
+  font-size: 26px;
+  padding: 20px 0 0 0;
+}
+
+.contacts__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__body li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contacts__body li span {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60px;
+          flex: 0 1 60px;
+}
+
+.contacts__body li img {
+  width: 40px;
+  height: 40px;
+}
+
+.contacts__body li a {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: inherit;
+}
+
+.contacts__body li a:hover {
+  color: #dacdfd;
 }

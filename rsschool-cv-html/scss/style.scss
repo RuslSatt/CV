@@ -10,17 +10,6 @@ body {
    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgb(216, 70, 252) 100%);
    background-size: 400% 400%;
    animation: gradient-body 15s ease infinite;
-   @keyframes gradient-body {
-      0% {
-         background-position: 0% 50%;
-      }
-      50% {
-         background-position: 100% 50%;
-      }
-      100% {
-         background-position: 0% 50%;
-      }
-   }
 }
 
 .wrapper {
@@ -88,7 +77,7 @@ body {
 
 .header {
    &__body {
-      min-height: 50px;
+      min-height: 70px;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -200,7 +189,7 @@ body {
 // --------------------- section hello ------------------------ //
 
 .hero {
-   padding: 50px 0 50px 0;
+   padding: 50px 0 0px 0;
 
    &__body {
       display: flex;
@@ -349,7 +338,7 @@ body {
 // ----------------- code --------------- //
 
 .code {
-   padding: 50px 0;
+   padding: 50px 0 0 0;
    &__body {
       overflow: hidden;
       background: radial-gradient(circle, rgba(245, 245, 246, 1) 0%, rgba(153, 134, 138, 1) 88%);
@@ -389,7 +378,7 @@ body {
 // ---------------------------- projects ----------------------------- //
 
 .projects {
-   padding: 0 0 100px 0;
+   padding: 50px 0 0px 0;
 
    &__row {
       display: flex;
@@ -584,3 +573,114 @@ body {
    }
 }
 
+// --------------------- Education --------------- //
+.education-english {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.education {
+   flex: 0 1 50%;
+   padding: 50px 0 50px 0;
+   @media (max-width: 768px) {
+      flex: 0 1 100%;
+      padding: 50px 0 0px 0;
+   }
+   &__name {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 10px;
+      line-height: 1.2;
+      color: #dacdfd;
+   }
+
+   &__desc {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 20px;
+      p {
+         margin-bottom: 20px;
+         line-height: 1.2;
+      }
+      *:last-child {
+         margin-bottom: 0px;
+      }
+      span {
+         color: chartreuse;
+      }
+   }
+}
+
+// --------------------- english ------------------ //
+
+.english {
+   flex: 0 1 50%;
+   padding: 50px 0 50px 0;
+   @media (max-width: 768px) {
+      flex: 0 1 100%;
+      padding: 50px 0 0px 0;
+   }
+   &__subtitle {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      padding: 10px;
+      border: 5px solid #dacdfd;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin: 0px auto;
+      background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+      background-size: 300% 100%;
+      animation: progress-animation 5s linear infinite;
+
+      @keyframes progress-animation {
+         0% {
+            background-position: 100%;
+         }
+         100% {
+            background-position: 0;
+         }
+      }
+   }
+
+   &__text {
+      text-align: center;
+      font-size: 26px;
+      padding: 20px 0 0 0;
+   }
+}
+
+// ----------------------- contacts ------------------ //
+
+.contacts {
+   &__body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li {
+         flex: 0 1 33.333%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         span {
+            flex: 0 1 60px;
+         }
+         img {
+            width: 40px;
+            height: 40px;
+         }
+         font-size: 24px;
+         margin-bottom: 10px;
+         a {
+            transition: 0.3s ease;
+            color: inherit;
+            &:hover {
+               color: #dacdfd;
+            }
+         }
+      }
+   }
+}
