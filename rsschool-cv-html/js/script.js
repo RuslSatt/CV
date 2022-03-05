@@ -1,14 +1,26 @@
 // --------------- menu burger ----------- //
 const menuActive = document.querySelector('.menu-header__menu');
 const menuIcon = document.querySelector('.menu-header__icon');
-
+const menuLink = document.querySelectorAll('.menu-header__link');
 menuIcon.addEventListener ('click', function (e) {
    menuActive.classList.toggle ('active');
    menuIcon.classList.toggle ('icon-active');
 })
 
+menuLink.forEach (menu => {
+   menu.addEventListener ('click', function (e) {
+      if (menuActive.classList.contains('active')) {
+         menuActive.classList.remove ('active');
+         menuIcon.classList.remove ('icon-active');
+      }
+   })
+})
+
+
+
 const projects = document.querySelector('.projects__row');
 
+// ---------- projects --------------- //
 function showDescription (e) {
    if (e.target.closest('.projects__link-description')) {
       let dataValue = e.target.dataset.back;
@@ -36,4 +48,11 @@ window.addEventListener('click', function (e) {
          back.classList.remove ('active-projects');
       })
    }
+})
+
+// ----------------- arrow ----------------- //
+const arrow = document.querySelector('.arrow');
+
+arrow.addEventListener ('click', function (e) {
+   window.scrollTo (0, 0);
 })

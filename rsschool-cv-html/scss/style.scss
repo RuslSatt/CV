@@ -73,6 +73,42 @@ body {
    }
 }
 
+.arrow {
+   position: fixed;
+   bottom: 80px;
+   right: 180px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   @media (max-width: 1440px) {
+      bottom: 80px;
+      right: 20px;
+   }
+   img {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      top: 2px;
+      animation: arrow 1s linear infinite;
+      @keyframes arrow {
+         0% {
+            top: 3px;
+         }
+         50% {
+            top: -3px;
+         }
+         100% {
+            top: 3px;
+         }
+      }
+   }
+   cursor: pointer;
+   width: 35px;
+   height: 35px;
+   background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+   border-radius: 50%;
+}
+
 // ------------------ header ---------------------- //
 
 .header {
@@ -246,7 +282,7 @@ body {
 
 
    &__text {
-      font-size: 20px;
+      font-size: 26px;
       line-height: 1.5;
       background-color: #dacdfd;
       border-radius: 10px;
@@ -581,10 +617,9 @@ body {
 
 .education {
    flex: 0 1 50%;
-   padding: 50px 0 50px 0;
+   padding: 50px 0 0px 0;
    @media (max-width: 768px) {
       flex: 0 1 100%;
-      padding: 50px 0 0px 0;
    }
    &__name {
       text-align: center;
@@ -615,10 +650,9 @@ body {
 
 .english {
    flex: 0 1 50%;
-   padding: 50px 0 50px 0;
+   padding: 50px 0 0px 0;
    @media (max-width: 768px) {
       flex: 0 1 100%;
-      padding: 50px 0 0px 0;
    }
    &__subtitle {
       text-align: center;
@@ -656,12 +690,20 @@ body {
 // ----------------------- contacts ------------------ //
 
 .contacts {
+   padding: 50px 0 0px 0;
    &__body {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
       li {
          flex: 0 1 33.333%;
+         @media (max-width: 900px) {
+            flex: 0 1 50%;
+         }
+         @media (max-width: 600px) {
+            flex: 0 1 100%;
+         }
          display: flex;
          justify-content: center;
          align-items: center;
@@ -684,3 +726,54 @@ body {
       }
    }
 }
+
+// ---------------- footer ------------------------- //
+
+.footer {
+   margin: 50px 0 0 0;
+   background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(97,45,253,1) 100%);
+   &__body {
+      border-radius: 10px 10px 0px 0px;
+      padding: 15px 0px;
+      min-height: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 400px) {
+         padding: 10px 0px;
+      }
+   }
+
+   &__year {
+      font-size: 26px;
+      letter-spacing: 1px;
+      color: #e1e4e8;
+   }
+
+   &__logo {
+      img {
+         width: 100px;
+         height: 50px;
+         transition: 0.3s;
+         &:hover {
+            transform: scale(1.05);
+         }
+      }
+   }
+
+   &__icons {
+      a:last-child {
+         margin-left: 10px;
+      }
+      img {
+         width: 40px;
+         height: 40px;
+         transition: 0.3s;
+         &:hover {
+            transform: scale(1.05);
+         }
+      }
+   }
+}
+
+
