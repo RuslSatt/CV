@@ -7,7 +7,7 @@ html {
 body {
    font-family: "Patrick Hand", sans-serif;
    color: #000;
-   background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgb(216, 70, 252) 100%);
+   background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgb(233, 155, 255) 100%);
    background-size: 400% 400%;
    animation: gradient-body 15s ease infinite;
 }
@@ -76,13 +76,12 @@ body {
 .arrow {
    position: fixed;
    bottom: 80px;
-   right: 180px;
+   right: 20px;
    display: flex;
    justify-content: center;
    align-items: center;
    @media (max-width: 1440px) {
       bottom: 80px;
-      right: 20px;
    }
    img {
       width: 30px;
@@ -313,40 +312,14 @@ body {
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      column-gap: 60px;
+      column-gap: 30px;
       padding: 20px 0 0 0;
    }
-   &__progress-bar {
-      flex: 0 1 45%;
+   &__skill {
       display: flex;
       align-items: center;
       justify-content: center;
-      @media (max-width: 650px) {
-         flex: 0 1 100%;
-      }
-   }
-
-   &__name {
-      flex: 0 1 10%;
-      font-size: 26px;
-      margin-right: 20px;
-   }
-
-   &__progress {
-      width: 100%;
-      max-width: 400px;
-      height: 20px;
-      background: #e1e4e8;
-      border-radius: 10px;
-      overflow: hidden;
-   }
-
-   &__bar {
-      text-align: center;
-      font-size: 20px;
-      padding: 0px 15px 2px 10px;
-      display: block;
-      height: 100%;
+      flex: 0 1 45%;
       background: linear-gradient(
          90deg,
          #ffd33d,
@@ -358,7 +331,23 @@ body {
          #b34bff
       );
       background-size: 300% 100%;
-      animation: progress-animation 2s linear infinite;
+      animation: progress-animation 5s linear infinite;
+      padding: 5px;
+      box-shadow: 5px 5px 12px 5px #9500ff;
+   }
+
+   &__name {
+      font-size: 26px;
+      background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgb(239, 175, 255) 100%);
+      width: 100px;
+      height: 100px;
+      position: relative;
+      z-index: 30;
+      display: flex;
+
+      background-size: 400% 400%;
+      animation: gradient-body 15s ease infinite;
+   }
 
       @keyframes progress-animation {
          0% {
@@ -369,7 +358,6 @@ body {
          }
       }
    }
-}
 
 // ----------------- code --------------- //
 
@@ -510,20 +498,7 @@ body {
          padding: 10px;
       }
    }
-
-   &__title-item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: inherit;
-      margin-bottom: 20px;
-      font-size: 30px;
-      @media (max-width: 500px) {
-         font-size: 25px;
-      }
-      padding: 5px;
-      border-radius: 10px;
+   &__title-item_container {
       background: linear-gradient(
          90deg,
          #ffd33d,
@@ -536,6 +511,28 @@ body {
       );
       background-size: 300% 100%;
       animation: progress-animation 10s linear infinite;
+      margin-bottom: 20px;
+      padding: 5px;
+      border-radius: 15px;
+      transition: 0.3s;
+      &:hover {
+         box-shadow: 2px 2px 12px 2px #dba8ff;
+      }
+   }
+   &__title-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: inherit;
+      font-size: 30px;
+      background: radial-gradient(circle, rgb(141, 160, 253) 0%, rgba(239, 175, 255, 0.521) 100%);
+      @media (max-width: 500px) {
+         font-size: 25px;
+      }
+      padding: 5px;
+      border-radius: 10px;
+
 
       @keyframes progress-animation {
          0% {
@@ -545,9 +542,7 @@ body {
             background-position: 0;
          }
       }
-      &:hover {
-         animation: progress-animation 1s linear infinite;
-      }
+
    }
 
    &__use-skills {
@@ -566,7 +561,6 @@ body {
       justify-content: center;
       gap: 20px;
    }
-
    &__link-description,
    &__link-src {
       color: #000;
@@ -578,29 +572,11 @@ body {
       align-items: center;
       padding: 10px 0;
       flex: 0 1 70%;
-      background: linear-gradient(
-         90deg,
-         #ffd33d,
-         #ea4aaa 17%,
-         #b34bff 34%,
-         #01feff 51%,
-         #ffd33d 68%,
-         #ea4aaa 85%,
-         #b34bff
-      );
-      background-size: 300% 100%;
-      animation: progress-animation 10s linear infinite;
-
-      @keyframes progress-animation {
-         0% {
-            background-position: 100%;
-         }
-         100% {
-            background-position: 0;
-         }
-      }
+      background: #e8cefa;
+      border: 3px solid #e1fde8;
+      transition: 0.3s;
       &:hover {
-         animation: progress-animation 1s linear infinite;
+         box-shadow: 3px 3px 7px #dba8ff;
       }
    }
    &__link-description {
