@@ -1,2 +1,2 @@
-# rsschool-cv
-* CV-markdown -> https://ruslsatt.github.io/rsschool-cv/cv
+* ***[CV](https://ruslsatt.github.io/CV/)***
+* ***[CV-markdown](https://ruslsatt.github.io/CV/cv)***
