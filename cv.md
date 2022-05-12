@@ -44,11 +44,15 @@ var countBits = function(n) {
 * [portfolio](https://github.com/RuslSatt/rs-school-stage-0/tree/portfolio)
 * [movie-app](https://github.com/RuslSatt/rs-school-stage-0/tree/movie-app)
 * [tic-tac-toe](https://github.com/RuslSatt/rs-school-stage-0/tree/tic-tac-toe)
+* [shelter](https://ruslsatt.github.io/shelter/)
+* [allbirds](https://ruslsatt.github.io/allbirds/)
 
 ## Education
 
 * **College:** Oktyabrsky Oil College, specialty geophysics
-* **Courses:** No courses, training only on YouTube and Google
+* **Courses:** 
+  * JS/FE Pre-School 2022
+  * JavaScript/Front-end 2022Q1 in progress
 
 ## English language
 
